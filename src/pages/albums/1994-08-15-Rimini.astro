@@ -1,0 +1,13 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import { Picture } from '@astrojs/image/components';
+---
+
+<Layout pageTitle="Rimini 1994">
+	<main>
+    <Picture src={import('../../images/P1000442.jpg')} widths={[100, 200, 800]}  alt="some desc."/>
+    <Picture src={import('../../images/P1000445.jpg')} widths={[100, 200, 800]}  alt="some desc."/>
+    <Picture src={import('../../images/P1000452.jpg')} widths={[100, 200, 800]}  alt="some desc."/>
+    <Picture src={import('../../images/P1000453.jpg')} widths={[100, 200, 800]}  alt="some desc."/>
+  </main>
+</Layout>
