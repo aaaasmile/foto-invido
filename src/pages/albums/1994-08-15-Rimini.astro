@@ -5,9 +5,11 @@ import { Picture } from '@astrojs/image/components';
 
 <Layout pageTitle="Rimini 1994">
 	<main>
-    <Picture src={import('../../images/P1000442.jpg')} widths={[100, 200, 800]}  alt="some desc."/>
-    <Picture src={import('../../images/P1000445.jpg')} widths={[100, 200, 800]}  alt="some desc."/>
-    <Picture src={import('../../images/P1000452.jpg')} widths={[100, 200, 800]}  alt="some desc."/>
-    <Picture src={import('../../images/P1000453.jpg')} widths={[100, 200, 800]}  alt="some desc."/>
+    <a href="../../images/P1000442.jpg">
+      <Picture src={import('../../images/P1000442.jpg')} widths={[50, 100, 800]} sizes="(max-width: 400px) 50vw, (max-width: 800px) 100vw, 800px" alt="some desc."/>
+    </a>
+    <Picture src={import('../../images/P1000445.jpg')} widths={[50, 100, 800]} sizes="(max-width: 400px) 50vw, (max-width: 800px) 100vw, 800px"  alt="some desc."/>
+    <Picture src={import('../../images/P1000452.jpg')} widths={[50, 100, 800]} sizes="(max-width: 400px) 50vw, (max-width: 800px) 100vw, 800px"  alt="some desc."/>
+    <Picture src={import('../../images/P1000453.jpg')} widths={[50, 100, 800]} sizes="(max-width: 400px) 50vw, (max-width: 800px) 100vw, 800px"  alt="some desc."/>
   </main>
 </Layout>
