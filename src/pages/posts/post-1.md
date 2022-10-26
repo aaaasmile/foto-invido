@@ -4,9 +4,6 @@ title: 'Sul sito foto.invido.it'
 pubDate: 26.10.2022
 description: 'Introduzione al sito foto.invido.it'
 author: 'Luz De Gan'
-postImage:
-    pic: '../images/me.jpg'
-    alt: 'Luz'
 tags: ["foto", "blogging"]
 ---
 ## Le foto
