@@ -21,3 +21,5 @@ pnpm-debug.log*
 
 ## local images
 src/images
+sync_site_invido.sh
+.cache
