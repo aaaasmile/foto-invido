@@ -1,6 +1,12 @@
 ---
+export interface Props {
+  picToShow: ImageMetadata;
+}
+
 import { Image } from '@astrojs/image/components';
+
+const { picToShow } = Astro.props;
 
 ---
   
-<Image src={import("../../images/P1000442.jpg")} alt="Bla" />
+<!-- <Image src={picToShow} alt="Bla" /> -->
