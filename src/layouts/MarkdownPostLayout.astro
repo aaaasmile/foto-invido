@@ -1,5 +1,8 @@
 ---
 import BaseLayout from "./Layout.astro";
+import { Image } from "@astrojs/image/components";
+import meImage from '../images/me.jpg';
+
 const { frontmatter } = Astro.props;
 ---
 
@@ -8,11 +11,12 @@ const { frontmatter } = Astro.props;
     <h1>{frontmatter.title}</h1>
     <p>{frontmatter.pubDate.slice(0, 10)}</p>
     <p><em>{frontmatter.description}</em></p>
-    <p>Written by: {frontmatter.author}</p>
-    <img
-      src={frontmatter.postImage.url}
+    <p>Scritto da: {frontmatter.author}</p>
+    <Image
+      src={meImage}
       alt={frontmatter.postImage.alt}
-      width="300"
+      aspectRatio="1:1"
+      width="100"
     />
     <slot />
   </main>
