@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro"
 import { Picture } from '@astrojs/image/components';
+import PicComp from "../../components/SingleFoto.astro";
 import pic442 from '../../images/P1000442.jpg'
 import pic445 from '../../images/P1000445.jpg'
 import pic452 from '../../images/P1000452.jpg'
@@ -9,6 +10,7 @@ import pic453 from '../../images/P1000453.jpg'
 
 <Layout pageTitle="Rimini 1994">
 	<main>
+    <PicComp picToShow={pic442}></PicComp>
     <a href={pic442.src}>
       <Picture src={pic442} widths={[50, 100, 800]} sizes="(max-width: 400px) 50vw, (max-width: 800px) 100vw, 800px" alt="some desc."/>
     </a>
