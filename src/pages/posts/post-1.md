@@ -20,3 +20,5 @@ tags: ["astro", "blogging", "learning in public"]
 ## What's next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+
+<iframe width="100%" height="320px" src="https://www.youtube.com/embed/aHNWL7MBXoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

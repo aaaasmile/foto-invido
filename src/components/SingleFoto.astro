@@ -9,5 +9,11 @@ const { picToShow } = Astro.props;
 ---
 
 <a href={picToShow.src}>
-  <Picture src={picToShow} widths={[50, 100, 800]} sizes="(max-width: 400px) 50vw, (max-width: 800px) 100vw, 800px" alt="some desc."/>
+  <Picture src={picToShow} widths={[50, 100, 800]} sizes="(max-width: 400px) 50vw, (max-width: 800px) 100vw, 800px" aspectRatio="1:1" alt="some desc."/>
 </a>
+
+<style>
+  Picture {
+    max-width: 10px;
+  }
+</style>
