@@ -1,9 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro"
 import { Image } from '@astrojs/image/components';
-import heroImage from '../../images/P1000442.jpg';
+import SingleFoto from "./SingleFoto.astro";
+
 ---
 
-<Layout pageTitle="Rimini 1994">
-  <Image src={heroImage} alt="descriptive text" />
-</Layout>
+<!-- <SingleFoto alt="some descr" linkname="../../images/P1000442.jpg">
+</SingleFoto> -->
+  
+<Image src={import("../../images/P1000442.jpg")} alt="Bla" />
