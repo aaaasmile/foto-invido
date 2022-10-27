@@ -1,0 +1,60 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PicComp from "../../components/SingleFoto.astro";
+import pic374 from "../../images/1991-01-Campiglio/P1000374.jpg";
+import pic375 from "../../images/1991-01-Campiglio/P1000375.jpg";
+import pic380 from "../../images/1991-01-Campiglio/P1000380.jpg";
+import pic384 from "../../images/1991-01-Campiglio/P1000384.jpg";
+import pic385 from "../../images/1991-01-Campiglio/P1000385.jpg";
+import pic389 from "../../images/1991-01-Campiglio/P1000389.jpg";
+import pic390 from "../../images/1991-01-Campiglio/P1000390.jpg";
+import pic391 from "../../images/1991-01-Campiglio/P1000391.jpg";
+import pic392 from "../../images/1991-01-Campiglio/P1000392.jpg";
+import pic393 from "../../images/1991-01-Campiglio/P1000393.jpg";
+import pic395 from "../../images/1991-01-Campiglio/P1000395.jpg";
+import pic402 from "../../images/1991-01-Campiglio/P1000402.jpg";
+import pic403 from "../../images/1991-01-Campiglio/P1000403.jpg";
+import pic405 from "../../images/1991-01-Campiglio/P1000405.jpg";
+import pic406 from "../../images/1991-01-Campiglio/P1000406.jpg";
+import pic407 from "../../images/1991-01-Campiglio/P1000407.jpg";
+import pic476 from "../../images/1991-01-Campiglio/P1000476.jpg";
+import pic483 from "../../images/1991-01-Campiglio/P1000483.jpg";
+---
+
+<Layout pageTitle="Campiglio">
+  <main>
+    <ul role="list" class="link-card-grid">
+      <PicComp picToShow={pic374} />
+      <PicComp picToShow={pic375} />
+      <PicComp picToShow={pic380} />
+      <PicComp picToShow={pic384} />
+      <PicComp picToShow={pic385} />
+      <PicComp picToShow={pic389} />
+      <PicComp picToShow={pic390} />
+      <PicComp picToShow={pic391} />
+      <PicComp picToShow={pic392} />
+      <PicComp picToShow={pic393} />
+      <PicComp picToShow={pic395} />
+      <PicComp picToShow={pic402} />
+      <PicComp picToShow={pic403} />
+      <PicComp picToShow={pic405} />
+      <PicComp picToShow={pic406} />
+      <PicComp picToShow={pic407} />
+      <PicComp picToShow={pic476} />
+      <PicComp picToShow={pic483} />
+      </ul>
+  </main>
+</Layout>
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>
