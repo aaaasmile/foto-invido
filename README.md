@@ -47,3 +47,18 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+### Per partire
+Usa il WSL sotto windows e poi lancia code . per lo sviluppo in remoto con Visual Code.
+Usa i comandi sopra elencati. Per generare un file astro del fotoalbum usa il programma  astro-helper - Verknüpfung.
+Per la sincronizzazione del sito usa: ./sync_site_invido.sh
+
+## Installazione ambiente di sviluppo
+Se parto con una nuova WSL senza nodejs bisogna stare attenti a come si esegue l'installazione di nodejs.
+Non si usa atp-get in quanto installa una versione troppo vecchia. Quello che si usa è spiegato qui:
+https://github.com/nodesource/distributions/blob/master/README.md
+In pratica ho usato la seguente liena di comando:
+curl -fsSL https://deb.nodesource.com/setup_19.x | bash - &&\
+apt-get install -y nodejs
+
+Poi ho lanciato npm install seguito da npm run dev ed ha funzionato senza problemi.
